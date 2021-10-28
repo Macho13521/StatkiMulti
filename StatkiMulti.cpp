@@ -99,11 +99,13 @@ void Rozstawienie1()
             else
             {
                 cout << "Nie mozna umiescic statku poza mapa!" << endl;
+                Sleep(2500);
             }
         }
         else
         {
             cout << "Tam juz jest statek!" << endl;
+            Sleep(2500);
         }
     }
 
@@ -151,11 +153,13 @@ void Rozstawienie1()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 2:
@@ -170,11 +174,13 @@ void Rozstawienie1()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 3:
@@ -190,11 +196,13 @@ void Rozstawienie1()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 4:
@@ -209,11 +217,13 @@ void Rozstawienie1()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 default:
@@ -223,6 +233,7 @@ void Rozstawienie1()
             else
             {
                 cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                Sleep(2500);
             }
 
             if (statekv2gut)
@@ -238,6 +249,7 @@ void Rozstawienie1()
         else
         {
             cout << "Tam juz jest statek!" << endl;
+            Sleep(2500);
         }
     }
 }
@@ -267,11 +279,13 @@ void Rozstawienie2()
             else
             {
                 cout << "Nie mozna umiescic statku poza mapa!" << endl;
+                Sleep(2500);
             }
         }
         else
         {
             cout << "Tam juz jest statek!" << endl;
+            Sleep(2500);
         }
     }
 
@@ -296,8 +310,10 @@ void Rozstawienie2()
         {
             if (11 > kord1 - 1 >= 0 && 11 > kord2 - 1 >= 0)
             {
-                cout << "w jakim kierunku ma byc skierowany? (wpisz liczbe)" << endl << "w gore - 1" << endl << "w dol - 2" << endl << "w lewo - 3" << endl << "w prawo - 4" << endl;
+                cout <<endl<< "w jakim kierunku ma byc skierowany? (wpisz liczbe)" << endl << "w gore - 1" << endl << "w dol - 2" << endl << "w lewo - 3" << endl << "w prawo - 4" << endl;
                 cin >> kierunek;
+
+                cout << endl;
 
                 kord1v2 = kord1;
                 kord2v2 = kord2;
@@ -317,11 +333,13 @@ void Rozstawienie2()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 2:
@@ -336,11 +354,13 @@ void Rozstawienie2()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 3:
@@ -356,11 +376,13 @@ void Rozstawienie2()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 case 4:
@@ -375,11 +397,13 @@ void Rozstawienie2()
                         else
                         {
                             cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                            Sleep(2500);
                         }
                     }
                     else
                     {
                         cout << "Tam juz jest statek!" << endl;
+                        Sleep(2500);
                     }
                     break;
                 default:
@@ -389,6 +413,7 @@ void Rozstawienie2()
             else
             {
                 cout << "Nie mozesz umiejscic statku poza mapa" << endl;
+                Sleep(2500);
             }
 
             if (statekv2gut)
@@ -404,6 +429,7 @@ void Rozstawienie2()
         else
         {
             cout << "Tam juz jest statek!" << endl;
+            Sleep(2500);
         }
     }
 }
@@ -437,12 +463,16 @@ void Rozpocznij()
 
                 wynik1--;
 
+                Sleep(1500);
+                system("cls");
                 cout << endl << "Trafiony! Zostalo " << wynik1 << " czesci statkow" << endl;
             }
             else
             {
                 strzal1[kord1 - 1][kord2 - 1] = 1;
                 
+                Sleep(1500);
+                system("cls");
                 cout << endl << "Pudlo! Zostalo " << wynik1 << " czesci statkow" << endl;
             }
             Mapa(3);
@@ -462,12 +492,16 @@ void Rozpocznij()
 
                 wynik2--;
 
+                Sleep(1500);
+                system("cls");
                 cout << endl << "Trafiony! Zostalo " << wynik2 << " czesci statkow" << endl;
             }
             else
             {
                 strzal2[kord1 - 1][kord2 - 1] = 1;
 
+                Sleep(1500);
+                system("cls");
                 cout << endl << "Pudlo! Zostalo " << wynik2 << " czesci statkow" << endl;
             }
             Mapa(4);
