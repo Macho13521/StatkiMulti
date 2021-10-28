@@ -1,10 +1,10 @@
 ﻿  StatkiMulti.cpp
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(65,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(65,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(101,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(101,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(234,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(234,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(270,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
-C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(270,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(68,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(68,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(104,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(104,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(237,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(237,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(273,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(273,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
   StatkiMulti.vcxproj -> C:\Users\macho\source\repos\StatkiMulti\x64\Debug\StatkiMulti.exe

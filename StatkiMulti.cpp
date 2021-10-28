@@ -10,6 +10,9 @@ string imie2;
 int gracz1[10][10];
 int gracz2[10][10];
 
+int strzal1[10][10];
+int strzal2[10][10];
+
 int wynik1 = 10;
 int wynik2 = 10;
 
@@ -380,10 +383,43 @@ void Rozstawienie2()
         }
 
     }
-
-
 }
 
+void Rozpocznij() 
+{
+    bool rozgrywka=true;
+    bool ktorygracz = true;
+
+    int kord1;
+    int kord2;
+
+    while (rozgrywka)
+    {
+        Sleep(3000);
+        system("cls");
+        if (ktorygracz) 
+        {
+            cout << "Niech gracz " << imie1<< " wpisze koordynaty w ktore chce strzelic" << endl;
+            cin >> kord1 >> kord2;
+
+
+            ktorygracz = false;
+        }
+        else
+        {
+            cout << "Niech gracz " << imie2 << " wpisze koordynaty w ktore chce strzelic" << endl;
+            cin >> kord1 >> kord2;
+
+
+            ktorygracz = true;
+        }
+
+        if (wynik1 == 0 || wynik2 == 0) 
+        {
+            rozgrywka = false;
+        }
+    }
+}
 
 int main()
 {
@@ -395,6 +431,8 @@ int main()
 
     Rozstawienie1();
     Rozstawienie2();
+
+    Rozpocznij();
 
     Sleep(2000);
     system("cls");
