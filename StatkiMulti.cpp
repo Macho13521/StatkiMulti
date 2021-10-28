@@ -84,7 +84,6 @@ void Rozstawienie1()
 
     while (progres < ilejednopolowych + 1)
     {
-        Sleep(3000);
         system("cls");
         Mapa(1);
 
@@ -119,7 +118,6 @@ void Rozstawienie1()
 
     while (progres < iledwupolowych + 1)
     {
-        Sleep(3000);
         system("cls");
         Mapa(1);
 
@@ -130,8 +128,10 @@ void Rozstawienie1()
         {
             if (11 > kord1 - 1 >= 0 && 11 > kord2 - 1 >= 0)
             {
-                cout << "w jakim kierunku ma byc skierowany? (wpisz liczbe)" << endl << "w gore - 1" << endl << "w dol - 2" << endl << "w lewo - 3" << endl << "w prawo - 4" << endl;
+                cout << endl << endl << "w jakim kierunku ma byc skierowany? (wpisz liczbe)" << endl << "w gore - 1" << endl << "w dol - 2" << endl << "w lewo - 3" << endl << "w prawo - 4" << endl;
                 cin >> kierunek;
+
+                cout << endl;
 
                 kord1v2 = kord1;
                 kord2v2 = kord2;
@@ -239,7 +239,6 @@ void Rozstawienie1()
         {
             cout << "Tam juz jest statek!" << endl;
         }
-
     }
 }
 
@@ -253,7 +252,6 @@ void Rozstawienie2()
 
     while (progres < ilejednopolowych + 1)
     {
-        Sleep(3000);
         system("cls");
         Mapa(2);
 
@@ -288,7 +286,6 @@ void Rozstawienie2()
 
     while (progres < iledwupolowych + 1)
     {
-        Sleep(3000);
         system("cls");
         Mapa(2);
 
@@ -408,7 +405,6 @@ void Rozstawienie2()
         {
             cout << "Tam juz jest statek!" << endl;
         }
-
     }
 }
 
@@ -425,7 +421,7 @@ void Rozpocznij()
 
     while (rozgrywka)
     {
-        Sleep(3000);
+        Sleep(4000);
         system("cls");
 
         if (ktorygracz) 
@@ -441,13 +437,13 @@ void Rozpocznij()
 
                 wynik1--;
 
-                cout << "Trafiony! Zostalo " << wynik1 << " czesci statkow" << endl;
+                cout << endl << "Trafiony! Zostalo " << wynik1 << " czesci statkow" << endl;
             }
             else
             {
                 strzal1[kord1 - 1][kord2 - 1] = 1;
                 
-                cout << "Pudlo! Zostalo " << wynik1 << " czesci statkow" << endl;
+                cout << endl << "Pudlo! Zostalo " << wynik1 << " czesci statkow" << endl;
             }
             Mapa(3);
 
@@ -466,13 +462,13 @@ void Rozpocznij()
 
                 wynik2--;
 
-                cout << "Trafiony! Zostalo " << wynik2 << " czesci statkow" << endl;
+                cout << endl << "Trafiony! Zostalo " << wynik2 << " czesci statkow" << endl;
             }
             else
             {
                 strzal2[kord1 - 1][kord2 - 1] = 1;
 
-                cout << "Pudlo! Zostalo " << wynik2 << " czesci statkow" << endl;
+                cout << endl << "Pudlo! Zostalo " << wynik2 << " czesci statkow" << endl;
             }
             Mapa(4);
 
@@ -500,17 +496,26 @@ int main()
     cout << "Wpisz nazwe pierwszego gracza" << endl;
     cin >> imie1;
 
+    cout << endl;
+
     cout << "Wpisz nazwe drugiego gracza" << endl;
     cin >> imie2;
 
     Rozstawienie1();
+
+    system("cls");
+    cout << "Tak wyglada ostatecznie flota gracza "<< imie1 << endl;
+    Mapa(1);
+
+    Sleep(5000);
+
     Rozstawienie2();
 
-    Rozpocznij();
-
-    Sleep(2000);
     system("cls");
-    cout << "Tak ostatecznie wygladaja mapki" << endl;
-    Mapa(1);
+    cout << "Tak wyglada ostatecznie flota gracza " << imie2 << endl;
     Mapa(2);
+
+    Sleep(5000);
+
+    Rozpocznij();
 }
