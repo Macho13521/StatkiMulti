@@ -13,11 +13,13 @@ int gracz2[10][10];
 int strzal1[10][10];
 int strzal2[10][10];
 
-int wynik1 = 10;
-int wynik2 = 10;
+int wynik1 = 11;
+int wynik2 = 11;
 
 int ilejednopolowych = 2;
 int iledwupolowych = 1;
+
+int iloscstatkow = ilejednopolowych + (iledwupolowych*2);
 
 int progres = 1;
 
@@ -35,12 +37,37 @@ void Mapa(int gracz) {
         }
         cout << endl;
     }
-    else
+    if(gracz == 2)
     {
         for (int i = 0; i < 10; i++)
         {
             for (int y = 0; y < 10; y++) {
                 cout << " " << gracz2[i][y];
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+
+    if (gracz == 3)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            for (int y = 0; y < 10; y++) {
+                cout << " " << strzal1[i][y];
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+    if (gracz == 4)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            for (int y = 0; y < 10; y++) {
+                cout << " " << strzal2[i][y];
             }
             cout << endl;
         }
@@ -390,6 +417,9 @@ void Rozpocznij()
     bool rozgrywka=true;
     bool ktorygracz = true;
 
+    wynik1 = iloscstatkow;
+    wynik2 = iloscstatkow;
+
     int kord1;
     int kord2;
 
@@ -397,19 +427,54 @@ void Rozpocznij()
     {
         Sleep(3000);
         system("cls");
+
         if (ktorygracz) 
         {
+            cout << "Mapa strzalow:" << endl;
+            Mapa(3);
             cout << "Niech gracz " << imie1<< " wpisze koordynaty w ktore chce strzelic" << endl;
             cin >> kord1 >> kord2;
 
+            if (gracz2[kord1-1][kord2-1]>0) 
+            {
+                strzal1[kord1 - 1][kord2 - 1] = 2;
+
+                wynik1--;
+
+                cout << "Trafiony! Zostalo " << wynik1 << " czesci statkow" << endl;
+            }
+            else
+            {
+                strzal1[kord1 - 1][kord2 - 1] = 1;
+                
+                cout << "Pudlo! Zostalo " << wynik1 << " czesci statkow" << endl;
+            }
+            Mapa(3);
 
             ktorygracz = false;
         }
         else
         {
+            cout << "Mapa strzalow:" << endl;
+            Mapa(4);
             cout << "Niech gracz " << imie2 << " wpisze koordynaty w ktore chce strzelic" << endl;
             cin >> kord1 >> kord2;
 
+            if (gracz1[kord1 - 1][kord2 - 1] > 0)
+            {
+                strzal2[kord1 - 1][kord2 - 1] = 2;
+
+                wynik2--;
+
+                cout << "Trafiony! Zostalo " << wynik2 << " czesci statkow" << endl;
+            }
+            else
+            {
+                strzal2[kord1 - 1][kord2 - 1] = 1;
+
+                cout << "Pudlo! Zostalo " << wynik2 << " czesci statkow" << endl;
+            }
+            Mapa(4);
 
             ktorygracz = true;
         }
@@ -418,6 +483,15 @@ void Rozpocznij()
         {
             rozgrywka = false;
         }
+    }
+    system("cls");
+    if (wynik1 == 0) 
+    {
+        cout << "Gracz "<< imie1 << " wygral" << endl;
+    }
+    if (wynik2 == 0)
+    {
+        cout << "Gracz " << imie2 << " wygral" << endl;
     }
 }
 
