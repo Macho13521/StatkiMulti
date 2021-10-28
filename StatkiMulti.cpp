@@ -16,8 +16,8 @@ int strzal2[10][10];
 int wynik1 = 11;
 int wynik2 = 11;
 
-int ilejednopolowych = 2;
-int iledwupolowych = 1;
+int ilejednopolowych = 5;
+int iledwupolowych = 3;
 
 int iloscstatkow = ilejednopolowych + (iledwupolowych*2);
 

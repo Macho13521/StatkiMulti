@@ -1,2 +1,10 @@
-﻿  LINK : nie znaleziono elementu C:\Users\macho\source\repos\StatkiMulti\x64\Debug\StatkiMulti.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
+﻿  StatkiMulti.cpp
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(94,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(94,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(129,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(129,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(262,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(262,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(297,20): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
+C:\Users\macho\source\repos\StatkiMulti\StatkiMulti.cpp(297,43): warning C4804: ">=": niebezpieczne użycie typu "bool" w operacji
   StatkiMulti.vcxproj -> C:\Users\macho\source\repos\StatkiMulti\x64\Debug\StatkiMulti.exe
